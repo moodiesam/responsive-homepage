@@ -1,13 +1,130 @@
+
+
+main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .header {
+    display: flex;
+    background: linear-gradient(160deg, #bfdbfe 65%, white 65%);
+}
+
+.pictureContainer {
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: white;
+}
+
+.headerPhoto {
+    max-width: 600px;
+    height: auto;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.aboutMe {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    float: none;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+.aboutMeLinks {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.icon {
+    max-width: 50px;
+    height: auto;
+}
+
+.myWork {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .projects {
     display: flex;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
 }
+
+.project {
+    max-width: 380px;
+    padding: 10px;
+}
+
+.projectImage {
+    max-width: 360px;
+    height: auto;
+}
+
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #bfdbfe;
+}
+
+.footerImage {
+    margin: 20px;
+}
+
+@media (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerPhoto {
+        max-width: 350px;
+        padding: 0px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerImage {
+        max-width: 350px;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+
+    .headerPhoto {
+        max-width: 400px;
+        float: left;
+    }
+
+    .footerImage {
+        max-width: 400px;
+    }
 }
