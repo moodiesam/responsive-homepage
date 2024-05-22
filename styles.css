@@ -27,6 +27,8 @@ button {
 .header {
     display: flex;
     background: linear-gradient(160deg, #bae6fd 65%, #e0f2fe 65%);
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .pictureContainer {
@@ -96,6 +98,12 @@ button {
     box-shadow: 5px 5px 10px #e5e7eb;
 }
 
+.projectSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .projectImage {
     max-width: 360px;
     height: auto;
@@ -124,7 +132,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: linear-gradient(160deg, #e0f2fe 65%, #bae6fd 65%);
-
+    padding: 5px;
 }
 
 .contactInfo {
