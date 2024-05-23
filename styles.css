@@ -164,6 +164,8 @@ button {
     .header {
         flex-direction: column;
         align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .headerPhoto {
