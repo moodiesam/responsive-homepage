@@ -59,8 +59,10 @@ button {
     padding-right: 50px;
     padding-bottom: 50px;
     padding-left: 20px;
+}
+
+.aboutMeText {
     font-size: 25px;
-    font-family: playfair;
 }
 
 .aboutMeLinks {
