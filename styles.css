@@ -27,8 +27,6 @@ button {
 .header {
     display: flex;
     background: linear-gradient(160deg, #bae6fd 65%, #e0f2fe 65%);
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
 .pictureContainer {
@@ -46,7 +44,7 @@ button {
 .headerPhoto {
     max-width: 600px;
     height: auto;
-    padding-left: 30px;
+    padding-left: 130px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -56,7 +54,7 @@ button {
     align-content: center;
     float: none;
     padding-top: 50px;
-    padding-right: 50px;
+    padding-right: 150px;
     padding-bottom: 50px;
     padding-left: 20px;
 }
