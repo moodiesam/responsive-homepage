@@ -175,6 +175,10 @@ button {
         top: auto;
     }
 
+    .aboutMe {
+        padding-right: 20px;
+    }
+
     .aboutMeText {
         font-size: medium;
     }
