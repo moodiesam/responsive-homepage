@@ -14,6 +14,10 @@ body {
     font-family: playfair;
 }
 
+main {
+    overflow: hidden;
+}
+
 button {
     background: none;
 	color: inherit;
@@ -22,6 +26,28 @@ button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    background-color: #bae6fd;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+    border-bottom: solid 1px black;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #334155;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .header {
@@ -100,6 +126,10 @@ button {
     box-shadow: 5px 5px 10px #e5e7eb;
 }
 
+.projectDescription {
+    padding: 20px;
+}
+
 .projectSelection {
     display: flex;
     flex-direction: column;
@@ -163,6 +193,10 @@ button {
 }
 
 @media (max-width: 550px) {
+    .navbar {
+        display: none;
+    }
+
     .header {
         flex-direction: column;
         align-items: center;
@@ -201,7 +235,7 @@ button {
 
     .contactInfo {
         margin: 0;
-        padding-bottom: 15px;
+        padding: 15px;
     }
 }
 
@@ -214,6 +248,11 @@ button {
     .headerPhoto {
         max-width: 600px;
         float: left;
+        padding-left: 0;
+    }
+
+    .aboutMe {
+        padding-right: 50px;
     }
 
     .footerImage {
