@@ -161,8 +161,8 @@ button {
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     background: linear-gradient(160deg, #e0f2fe 65%, #bae6fd 65%);
     padding: 5px;
 }
