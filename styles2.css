@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+main {
+    overflow: hidden;
+}
+
+main.fullImage {
+    background-image: url("./assets/images/wood_with_fabric.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: end;
+    gap: 20px;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fafaf9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+    gap: 50px;
+    height: 100vh;
+}
+
+.name {
+    font-size: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    text-align: end;
+    color: #fafaf9;
+    mix-blend-mode: difference;
+}
+
+picture img {
+    display: none;
+}
+
+.aboutMe {
+    background-color: rgba(231, 229, 228, .3);
+}
+
+
+
+.projectImage {
+    max-width: 360px;
+    height: auto;
+}
+
+.icon,
+.projectIcon {
+    max-width: 50px;
+    height: auto;
+}

@@ -14,9 +14,19 @@ body {
     font-family: playfair;
 }
 
-main {
+.main {
     overflow: hidden;
 }
+
+/* .fullImage {
+    background-image: url("./assets/images/wood_with_fabric.jpg");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
 
 button {
     background: none;
@@ -53,6 +63,7 @@ button {
 .header {
     display: flex;
     background: linear-gradient(160deg, #bae6fd 65%, #e0f2fe 65%);
+    
 }
 
 .pictureContainer {
@@ -183,12 +194,6 @@ button {
     padding: 5px;
 }
 
-.phoneIcon,
-.emailIcon {
-    max-width: 30px;
-    height: auto;
-}
-
 .footerImage {
     margin: 20px;
 }
@@ -240,7 +245,7 @@ button {
     }
 }
 
-@media (min-width: 551px) and (max-width: 1000px) {
+@media (min-width: 551px) and (max-width: 1200px) {
     .header {
         flex-direction: column;
         align-items: center;
