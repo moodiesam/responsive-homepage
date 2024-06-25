@@ -112,7 +112,7 @@ button {
     height: auto;
 }
 
-.myWork {
+.myWork, .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,6 +127,47 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 1400px;
+}
+
+.allSkills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f0f9ff;
+    max-width: 1400px;
+    box-shadow: 5px 5px 10px #e5e7eb;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.skillsIcon {
+    max-width: 50px;
+    height: auto;
+}
+
+.skillsCatagory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+}
+
+.center {
+    border-left: dotted 2px #e5e7eb;
+    border-right: dotted 2px #e5e7eb;
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.skillsList li {
+    list-style-type: none;
+    padding: 0;
 }
 
 .project {
@@ -198,7 +239,7 @@ button {
     margin: 20px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
     .navbar {
         display: none;
     }
@@ -228,6 +269,15 @@ button {
         padding: 0px;
     }
 
+    .center {
+        border-top: dotted 2px #e5e7eb;
+        border-bottom: dotted 2px #e5e7eb;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -245,7 +295,7 @@ button {
     }
 }
 
-@media (min-width: 551px) and (max-width: 1200px) {
+@media (min-width: 701px) and (max-width: 1200px) {
     .header {
         flex-direction: column;
         align-items: center;
@@ -259,6 +309,10 @@ button {
 
     .aboutMe {
         padding-right: 50px;
+    }
+
+    .center {
+        border: none;
     }
 
     .footerImage {
